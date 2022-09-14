@@ -13,4 +13,5 @@ user { 'bgodley':
 
 file { '/home/bgodley/': 
   ensure => directory,
+  source => '/etc/skel/'
 }
