@@ -4,7 +4,7 @@ package { 'cowsay':
 
 file { '/etc/profile.d/cowsay-path.sh':
   mode    => '644',
-  content => 'PATH=$PATH:/usr/games/',
+  content => 'export PATH=$PATH:/usr/games/ && cowsay "hello world!"',
 }
 
 file { '/root/hello2.txt':
