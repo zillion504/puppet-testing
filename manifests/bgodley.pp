@@ -15,5 +15,7 @@ user { 'bgodley':
 file { '/home/bgodley/': 
   ensure  => directory,
   source  => 'file:///etc/skel/',
+  owner   => '1000',
+  group   => '1000',
   recurse => true,
 }
