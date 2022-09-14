@@ -2,8 +2,8 @@ package { 'cowsay':
   ensure => installed,
 }
 
-file { '/root/hello.txt':
+file { '/root/hello2.txt':
   ensure  => present,
-  content => "cowsay "hello world!"",
+  content => "cowsay "hello world!"\n",
   require => Package['cowsay'],
 }
