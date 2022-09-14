@@ -3,7 +3,7 @@ package { 'cron':
 }
 
 file { '/usr/local/bin/run-puppet':
-  source => '/root/bin/run-puppet.sh',
+  source => '/opt/git/puppet/files/run-puppet.sh',
   mode   => '0755',
 }
 
