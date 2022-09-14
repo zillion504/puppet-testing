@@ -11,6 +11,6 @@ user { 'bgodley':
   password => 'abab',
 }
 
-directory { '/home/bgodley/': 
-  ensure => present,
+file { '/home/bgodley/': 
+  ensure => directory,
 }
