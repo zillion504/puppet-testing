@@ -13,6 +13,6 @@ user { 'bgodley':
 
 file { '/home/bgodley/': 
   ensure  => directory,
-  source  => 'file:///etc/skel/'
+  source  => 'file:///etc/skel/',
   recurse => true,
 }
