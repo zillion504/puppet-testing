@@ -5,6 +5,7 @@ group { 'bgodley':
 
 user { 'bgodley':
   ensure   => present,
+  shell    => '/bin/bash'
   uid      => '1000',
   gid      => '1000',
   home     => '/home/bgodley/',
