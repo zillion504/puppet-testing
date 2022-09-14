@@ -1,3 +1,7 @@
+package { 'cron':
+  ensure => installed
+}
+
 file { '/usr/local/bin/run-puppet':
   source => '/root/bin/run-puppet.sh',
   mode   => '0755',
