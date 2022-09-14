@@ -1,9 +1,9 @@
-package { "cowsay":
+package { 'cowsay':
   ensure => installed,
 }
 
-file { "/root/cow_hello":
+file { '/root/hello.txt':
   ensure  => present,
   content => 'cowsay "hello world!"',
-  require => Package["cowsay"],
+  require => Package['cowsay'],
 }
