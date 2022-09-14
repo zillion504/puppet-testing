@@ -4,6 +4,6 @@ package { 'cowsay':
 
 file { '/root/hello2.txt':
   ensure  => present,
-  content => "cowsay "hello world!"\n",
+  content => "cowsay \"hello world!\"\n",
   require => Package['cowsay'],
 }
