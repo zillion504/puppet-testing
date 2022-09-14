@@ -1,5 +1,5 @@
 file { '/usr/local/bin/run-puppet'
-  source => '/opt/git/puppet/bin/run-puppet.sh',
+  source => '/root/bin/run-puppet.sh',
   mode   => '0755',
 }
 
